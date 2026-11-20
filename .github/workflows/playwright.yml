@@ -31,6 +31,5 @@ jobs:
       run: npx playwright test
       env:
           BASE_URL: ${{ secrets.BASE_URL }}
-          ASSIGNMENT_TOKEN: ${{ secrets.ASSIGNMENT_TOKEN }}
           DEMO_EMAIL: ${{ secrets.DEMO_EMAIL }}
           DEMO_PASSWORD: ${{ secrets.DEMO_PASSWORD }}
