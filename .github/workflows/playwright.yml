@@ -25,12 +25,12 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+    -   name: Run Playwright tests
+        run: npx playwright test
+        env:
+            BASE_URL: ${{ secrets.BASE_URL }}
+            ASSIGNMENT_TOKEN: ${{ secrets.ASSIGNMENT_TOKEN }}
+            DEMO_EMAIL: ${{ secrets.DEMO_EMAIL }}
+            DEMO_PASSWORD: ${{ secrets.DEMO_PASSWORD }}
 
-
-      name: Run Playwright Tests
-      run: npx playwright test
-      env:
-          BASE_URL: ${{ secrets.BASE_URL }}
-          ASSIGNMENT_TOKEN: ${{ secrets.ASSIGNMENT_TOKEN }}
-          DEMO_EMAIL: ${{ secrets.DEMO_EMAIL }}
-          DEMO_PASSWORD: ${{ secrets.DEMO_PASSWORD }}
+    
