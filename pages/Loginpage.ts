@@ -3,7 +3,7 @@ import { test, expect, type Page } from '@playwright/test';
 export class LoginPage {
   constructor(private page: Page) {}
   async open() {
-    await this.page.goto(`https://thedappled.com/testing/page-objects/shop?a=CEWpv3t4vSpB${process.env.ASSIGNMENT_TOKEN}`);
+    await this.page.goto(`https://thedappled.com/testing/page-objects/shop?a=CEWpv3t4vSpB{process.env.ASSIGNMENT_TOKEN}`);
   }
 
 
