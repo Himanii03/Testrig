@@ -1,6 +1,6 @@
 import { test, expect, type Page } from '@playwright/test';
 
-export class productPage {
+export class productsPage {
   constructor(private page: Page) {}
   async open() {
     await this.page.goto(`https://thedappled.com/testing/page-objects/shop?a=CEWpv3t4vSpB${process.env.ASSIGNMENT_TOKEN}`);
@@ -14,7 +14,7 @@ export class productPage {
 
 }
 
-test('Login page test', async ({ page }) => {
-  const login = new productPage(page);
+test('product page test', async ({ page }) => {
+  const login = new productsPage(page);
   await login.open();
 });
