@@ -1,22 +1,24 @@
-import { test, expect, type Page } from '@playwright/test';
-// import process from 'node:process';
 
-export class LoginPage {
-  constructor(private page: Page) {}
-  async open() {
-       await this.page.goto(`https://thedappled.com/testing/cross-browser/shop?a=dS7X0AGsRvFc=${process.env.ASSIGNMENT_TOKEN}`);
+async signIn(email: string, password: string) {
+  await this.page.getByTestId('shop-email').fill(email);
+  await this.page.getByTestId('shop-password').fill(password);
 
-  }
+  await this.page.getByTestId('shop-signin').click();
 
+  console.log('URL after login:', this.page.url());
 
-  async signIn(email: string, password: string) {
-    await this.page.getByTestId('shop-email').fill(email);
-    await this.page.getByTestId('shop-password').fill(password);
-    await this.page.getByTestId('shop-signin').click();
-  }
+  console.log(
+    'Add ball button count:',
+    await this.page.getByTestId('add-ball').count()
+  );
+
+  console.log(
+    'Sign in button count:',
+    await this.page.getByTestId('shop-signin').count()
+  );
+
+  console.log(
+    'Page content:',
+    (await this.page.locator('body').innerText()).slice(0, 1000)
+  );
 }
-
-test('Login page test', async ({ page }) => {
-  const login = new LoginPage(page);
-  await login.open();
-});
