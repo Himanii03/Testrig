@@ -4,7 +4,7 @@ export class productsPage {
   constructor(private page: Page) {}
 
   async open() {
-        await this.page.goto(`/testing/cross-browser/shop?a=${process.env.ASSIGNMENT_TOKEN}`);
+        await this.page.goto(`https://thedappled.com/testing/cross-browser/shop?a=dS7X0AGsRvFc=${process.env.ASSIGNMENT_TOKEN}`);
 
   }
 
