@@ -8,7 +8,9 @@ export class productsPage {
 
   }
 
-  async addProduct(product: string) {await this.page.getByTestId(product).click();
+ async addProduct(product: string) {
+    await this.page.getByTestId(product).click();
+}
 
   }
 
