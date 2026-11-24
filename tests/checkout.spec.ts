@@ -1,13 +1,19 @@
 import { test, expect } from '../fixtures/fixtures';
 
-test('checks out two products', async ({ loginPage, productsPage, cartPage }) => { await loginPage.open();
+test('checks out two products', async ({loginPage,productsPage,cartPage}) => {
 
-await loginPage.signIn( process.env.SHOP_EMAIL!, process.env.SHOP_PASSWORD! );
+await loginPage.open();
 
-await productsPage.open();
+  await loginPage.signIn(
+    process.env.SHOP_EMAIL!,
+    process.env.SHOP_PASSWORD!);
 
-await cartPage.open();
+  await productsPage.addProduct('add-ball');
+  await productsPage.addProduct('add-notebook');
 
-//  await expect(cartPage.confirmation).toBeVisible();
+  await cartPage.openplaceorder();
 
+  await cartPage.placeorder();
+
+  await expect(cartPage.confirmation).toBeVisible();
 });

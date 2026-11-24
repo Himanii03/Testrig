@@ -18,6 +18,7 @@ export default defineConfig({
   
 testMatch: ['**/*.spec.ts'],
   /* Run tests in files in parallel */
+  
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
@@ -54,6 +55,9 @@ testMatch: ['**/*.spec.ts'],
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
+
+   
+  
  
     /* Test against mobile viewports. */
     // {
