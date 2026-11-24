@@ -11,8 +11,15 @@ export class productsPage {
   }
 
   async addProduct(product: string): Promise<void> {
+    console.log('Product ID:', product);
+
+    console.log(
+        'Matching elements:',
+        await this.page.getByTestId(product).count()
+    );
+
     await this.page.getByTestId(product).click();
-  }
+}
 
   async clickLink() {
     await this.page.getByText('Cart · 2').click();
