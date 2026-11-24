@@ -14,7 +14,7 @@ async signIn(email: string, password: string) {
     'Add ball button count:',
     await this.page.getByTestId('add-ball').count()
   );
-
+}
   console.log(
     'Sign in button count:',
     await this.page.getByTestId('shop-signin').count()
