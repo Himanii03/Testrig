@@ -13,7 +13,7 @@ async addProduct(product: string): Promise<void> {
 }
 }
 
-  }
+
 
   async clickLink() {
     await this.page.getByText('Cart · 2').click();
