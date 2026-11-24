@@ -4,7 +4,8 @@ import { test, expect, type Page } from '@playwright/test';
 export class LoginPage {
   constructor(private page: Page) {}
   async open() {
-    await this.page.goto(`/testing/cross-browser/shop?a=${process.env.ASSIGNMENT_TOKEN}`);
+       await this.page.goto(`/testing/cross-browser/shop?a=${process.env.ASSIGNMENT_TOKEN}`);
+
   }
 
 
