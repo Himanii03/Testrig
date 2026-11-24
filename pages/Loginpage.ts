@@ -15,13 +15,4 @@ async signIn(email: string, password: string) {
     await this.page.getByTestId('add-ball').count()
   );
 }
-  console.log(
-    'Sign in button count:',
-    await this.page.getByTestId('shop-signin').count()
-  );
-
-  console.log(
-    'Page content:',
-    (await this.page.locator('body').innerText()).slice(0, 1000)
-  );
-}
+ 
