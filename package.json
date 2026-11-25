@@ -10,7 +10,7 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.65.1",
-    "@types/node": "^26.6.9"
+    "@types/node": "^26.6.10"
   },
   "dependencies": {
     "dotenv": "^18.0.10"
