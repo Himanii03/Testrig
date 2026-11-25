@@ -1,28 +1,21 @@
+
 import type { Page } from '@playwright/test';
 
 export class LoginPage {
   constructor(private page: Page) {}
-  
-async signIn(email: string, password: string) {
-  await this.page.getByTestId('shop-email').fill(email);
-  await this.page.getByTestId('shop-password').fill(password);
+  async open() {
+  //   await this.page.goto(`https://thedappled.com/testing/cross-browser/shop?a=dS7X0AGsRvFc=${process.env.ASSIGNMENT_TOKEN}`);
+  // }
 
-  await this.page.getByTestId('shop-signin').click();
+  await this.page.goto(`${process.env.BASE_URL}/testing/cross-browser/shop?a=${process.env.ASSIGNMENT_TOKEN}`);}
 
-  console.log('URL after login:', this.page.url());
 
-  console.log(
-    'Add ball button count:',
-    await this.page.getByTestId('add-ball').count()
-  );
 
-  console.log(
-    'Sign in button count:',
-    await this.page.getByTestId('shop-signin').count()
-  );
-
-  console.log(
-    'Page content:',
-    (await this.page.locator('body').innerText()).slice(0, 1000)
-  );
+  async signIn(email: string, password: string) {
+    await this.page.getByTestId('shop-email').fill(email);
+    // await this.page.getByTestId('shop-email').fill('xb-ds7x0ags@thedappled.test');
+    await this.page.getByTestId('shop-password').fill(password);
+    // await this.page.getByTestId('shop-password').fill('XbDKII3rBT!4');
+    await this.page.getByTestId('shop-signin').click();
+  }
 }
