@@ -4,6 +4,11 @@ import type { Page } from '@playwright/test';
 export class LoginPage {
   constructor(private page: Page) {}
 
+  // ADD THIS METHOD
+  async open() {
+    await this.page.goto('YOUR_WEBSITE_URL');
+  }
+
   async signIn(email: string, password: string) {
     await this.page.getByTestId('shop-email').fill(email);
     await this.page.getByTestId('shop-password').fill(password);
