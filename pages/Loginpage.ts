@@ -6,7 +6,7 @@ export class LoginPage {
 
   // ADD THIS METHOD
   async open() {
-    await this.page.goto('YOUR_WEBSITE_URL');
+    await this.page.goto(`https://thedappled.com/testing/cross-browser/shop?a=dS7X0AGsRvFc=${process.env.ASSIGNMENT_TOKEN}`);
   }
 
   async signIn(email: string, password: string) {
