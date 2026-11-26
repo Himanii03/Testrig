@@ -38,23 +38,32 @@ testMatch: ['**/*.spec.ts'],
     baseURL: process.env.BASE_URL,
   },
  
- 
+  
+
+
+    forbidOnly: !!process.env.CI,
+    use: { baseURL: process.env.BASE_URL },
+    projects: [
+      { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
+      { name: 'webkit',   use: { ...devices['Desktop Safari'] } },
+    ],
+  });
   /* Configure projects for major browsers */
-  projects: [
-    {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
-    },
+  // projects: [
+  //   {
+  //     name: 'chromium',
+  //     use: { ...devices['Desktop Chrome'] },
+  //   },
  
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+  //   {
+  //     name: 'firefox',
+  //     use: { ...devices['Desktop Firefox'] },
+  //   },
  
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+  //   {
+  //     name: 'webkit',
+  //     use: { ...devices['Desktop Safari'] },
+  //   },
 
    
   
@@ -78,7 +87,7 @@ testMatch: ['**/*.spec.ts'],
     //   name: 'Google Chrome',
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     // },
-  ],
+  //],
  
   /* Run your local dev server before starting the tests */
   // webServer: {
@@ -86,4 +95,4 @@ testMatch: ['**/*.spec.ts'],
   //   url: 'http://localhost:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
-});
+//});

@@ -11,7 +11,7 @@ export class LoginPage {
 
 
 
-  async signIn(email: string, password: string) {
+  async  signIn(email: string, password: string) {
     await this.page.getByTestId('shop-email').fill(email);
     // await this.page.getByTestId('shop-email').fill('xb-ds7x0ags@thedappled.test');
     await this.page.getByTestId('shop-password').fill(password);

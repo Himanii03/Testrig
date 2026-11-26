@@ -1,0 +1,777 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Testrig\\Desktop\\Lending wise\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--reporter=json"
+    ],
+    "configFile": "C:\\Users\\Testrig\\Desktop\\Lending wise\\playwright.config.ts",
+    "rootDir": "C:/Users/Testrig/Desktop/Lending wise/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Testrig/Desktop/Lending wise/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Testrig/Desktop/Lending wise/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Testrig/Desktop/Lending wise/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Testrig/Desktop/Lending wise/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Testrig\\Desktop\\Lending wise\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests",
+        "snapshotDir": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000,
+        "use": {
+          "baseURL": "https://thedappled.com",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Testrig\\Desktop\\Lending wise\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "name": "webkit",
+        "testDir": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests",
+        "snapshotDir": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000,
+        "use": {
+          "baseURL": "https://thedappled.com",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1792,
+            "height": 1120
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "checkout.spec.ts",
+      "file": "checkout.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "checks out two products",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1475,
+                  "error": {
+                    "message": "Error: locator.fill: value: expected string, got undefined",
+                    "stack": "Error: locator.fill: value: expected string, got undefined\n    at LoginPage.signIn (C:\\Users\\Testrig\\Desktop\\Lending wise\\pages\\Loginpage.ts:15:47)\n    at C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\checkout.spec.ts:26:19",
+                    "location": {
+                      "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\pages\\Loginpage.ts",
+                      "column": 47,
+                      "line": 15
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\Loginpage.ts:15\n\n \u001b[90m 13 |\u001b[39m\n \u001b[90m 14 |\u001b[39m   \u001b[36masync\u001b[39m  signIn(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'shop-email'\u001b[39m)\u001b[33m.\u001b[39mfill(email)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[90m// await this.page.getByTestId('shop-email').fill('xb-ds7x0ags@thedappled.test');\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'shop-password'\u001b[39m)\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[90m// await this.page.getByTestId('shop-password').fill('XbDKII3rBT!4');\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\pages\\Loginpage.ts",
+                        "column": 47,
+                        "line": 15
+                      },
+                      "message": "Error: locator.fill: value: expected string, got undefined\n\n   at ..\\pages\\Loginpage.ts:15\n\n  13 |\n  14 |   async  signIn(email: string, password: string) {\n> 15 |     await this.page.getByTestId('shop-email').fill(email);\n     |                                               ^\n  16 |     // await this.page.getByTestId('shop-email').fill('xb-ds7x0ags@thedappled.test');\n  17 |     await this.page.getByTestId('shop-password').fill(password);\n  18 |     // await this.page.getByTestId('shop-password').fill('XbDKII3rBT!4');\n    at LoginPage.signIn (C:\\Users\\Testrig\\Desktop\\Lending wise\\pages\\Loginpage.ts:15:47)\n    at C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\checkout.spec.ts:26:19"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-26T09:30:42.425Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Testrig\\Desktop\\Lending wise\\test-results\\checkout-checks-out-two-products-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\pages\\Loginpage.ts",
+                    "column": 47,
+                    "line": 15
+                  }
+                }
+              ],
+              "status": "unexpected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 1694,
+                  "error": {
+                    "message": "Error: locator.fill: value: expected string, got undefined",
+                    "stack": "Error: locator.fill: value: expected string, got undefined\n    at LoginPage.signIn (C:\\Users\\Testrig\\Desktop\\Lending wise\\pages\\Loginpage.ts:15:47)\n    at C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\checkout.spec.ts:26:19",
+                    "location": {
+                      "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\pages\\Loginpage.ts",
+                      "column": 47,
+                      "line": 15
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\Loginpage.ts:15\n\n \u001b[90m 13 |\u001b[39m\n \u001b[90m 14 |\u001b[39m   \u001b[36masync\u001b[39m  signIn(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'shop-email'\u001b[39m)\u001b[33m.\u001b[39mfill(email)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[90m// await this.page.getByTestId('shop-email').fill('xb-ds7x0ags@thedappled.test');\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'shop-password'\u001b[39m)\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[90m// await this.page.getByTestId('shop-password').fill('XbDKII3rBT!4');\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\pages\\Loginpage.ts",
+                        "column": 47,
+                        "line": 15
+                      },
+                      "message": "Error: locator.fill: value: expected string, got undefined\n\n   at ..\\pages\\Loginpage.ts:15\n\n  13 |\n  14 |   async  signIn(email: string, password: string) {\n> 15 |     await this.page.getByTestId('shop-email').fill(email);\n     |                                               ^\n  16 |     // await this.page.getByTestId('shop-email').fill('xb-ds7x0ags@thedappled.test');\n  17 |     await this.page.getByTestId('shop-password').fill(password);\n  18 |     // await this.page.getByTestId('shop-password').fill('XbDKII3rBT!4');\n    at LoginPage.signIn (C:\\Users\\Testrig\\Desktop\\Lending wise\\pages\\Loginpage.ts:15:47)\n    at C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\checkout.spec.ts:26:19"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-26T09:30:55.108Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Testrig\\Desktop\\Lending wise\\test-results\\checkout-checks-out-two-products-webkit\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\pages\\Loginpage.ts",
+                    "column": 47,
+                    "line": 15
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "25ab1bfc84c57e3e3a45-8741c9f2c23c3980b24f",
+          "file": "checkout.spec.ts",
+          "line": 24,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "lab.spec.ts",
+      "file": "lab.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "annotations lab",
+          "file": "lab.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "SAVE10 takes 10% off",
+              "ok": true,
+              "tags": [
+                "lab",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "issue",
+                      "description": "SAVE10 gives 20% off",
+                      "location": {
+                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                        "line": 8,
+                        "column": 3
+                      }
+                    },
+                    {
+                      "type": "fail",
+                      "location": {
+                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                        "line": 12,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "failed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 8075,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('order-total')\nExpected: \u001b[32m\"$\u001b[7m72\u001b[27m.00\"\u001b[39m\nReceived: \u001b[31m\"$\u001b[7m64\u001b[27m.00\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByTestId('order-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('order-total')\u001b[22m\n\u001b[2m    14 × locator resolved to <dd data-testid=\"order-total\">$64.00</dd>\u001b[22m\n\u001b[2m       - unexpected value \"$64.00\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('order-total')\nExpected: \u001b[32m\"$\u001b[7m72\u001b[27m.00\"\u001b[39m\nReceived: \u001b[31m\"$\u001b[7m64\u001b[27m.00\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByTestId('order-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('order-total')\u001b[22m\n\u001b[2m    14 × locator resolved to <dd data-testid=\"order-total\">$64.00</dd>\u001b[22m\n\u001b[2m       - unexpected value \"$64.00\"\u001b[22m\n\n    at C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts:15:51",
+                        "location": {
+                          "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                          "column": 51,
+                          "line": 15
+                        },
+                        "snippet": " \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'coupon-input'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'SAVE10'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'coupon-apply'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'order-total'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'$72.00'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m\n \u001b[90m 18 |\u001b[39m   test(\u001b[32m'export CSV'\u001b[39m\u001b[33m,\u001b[39m { tag\u001b[33m:\u001b[39m \u001b[32m'@regression'\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                            "column": 51,
+                            "line": 15
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('order-total')\nExpected: \u001b[32m\"$\u001b[7m72\u001b[27m.00\"\u001b[39m\nReceived: \u001b[31m\"$\u001b[7m64\u001b[27m.00\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByTestId('order-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('order-total')\u001b[22m\n\u001b[2m    14 × locator resolved to <dd data-testid=\"order-total\">$64.00</dd>\u001b[22m\n\u001b[2m       - unexpected value \"$64.00\"\u001b[22m\n\n\n  13 |     await page.getByTestId('coupon-input').fill('SAVE10');\n  14 |     await page.getByTestId('coupon-apply').click();\n> 15 |     await expect(page.getByTestId('order-total')).toHaveText('$72.00');\n     |                                                   ^\n  16 |   });\n  17 |\n  18 |   test('export CSV', { tag: '@regression' }, async ({ page }) => {\n    at C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts:15:51"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-26T09:30:42.391Z",
+                      "annotations": [
+                        {
+                          "type": "issue",
+                          "description": "SAVE10 gives 20% off",
+                          "location": {
+                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                            "line": 8,
+                            "column": 3
+                          }
+                        },
+                        {
+                          "type": "fail",
+                          "location": {
+                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                            "line": 12,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Testrig\\Desktop\\Lending wise\\test-results\\lab-annotations-lab-SAVE10-takes-10-off-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                        "column": 51,
+                        "line": 15
+                      }
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "issue",
+                      "description": "SAVE10 gives 20% off",
+                      "location": {
+                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                        "line": 8,
+                        "column": 3
+                      }
+                    },
+                    {
+                      "type": "fail",
+                      "location": {
+                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                        "line": 12,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "failed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 8463,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('order-total')\nExpected: \u001b[32m\"$\u001b[7m72\u001b[27m.00\"\u001b[39m\nReceived: \u001b[31m\"$\u001b[7m64\u001b[27m.00\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByTestId('order-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('order-total')\u001b[22m\n\u001b[2m    13 × locator resolved to <dd data-testid=\"order-total\">$64.00</dd>\u001b[22m\n\u001b[2m       - unexpected value \"$64.00\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('order-total')\nExpected: \u001b[32m\"$\u001b[7m72\u001b[27m.00\"\u001b[39m\nReceived: \u001b[31m\"$\u001b[7m64\u001b[27m.00\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByTestId('order-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('order-total')\u001b[22m\n\u001b[2m    13 × locator resolved to <dd data-testid=\"order-total\">$64.00</dd>\u001b[22m\n\u001b[2m       - unexpected value \"$64.00\"\u001b[22m\n\n    at C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts:15:51",
+                        "location": {
+                          "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                          "column": 51,
+                          "line": 15
+                        },
+                        "snippet": " \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'coupon-input'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'SAVE10'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'coupon-apply'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'order-total'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'$72.00'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m\n \u001b[90m 18 |\u001b[39m   test(\u001b[32m'export CSV'\u001b[39m\u001b[33m,\u001b[39m { tag\u001b[33m:\u001b[39m \u001b[32m'@regression'\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                            "column": 51,
+                            "line": 15
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('order-total')\nExpected: \u001b[32m\"$\u001b[7m72\u001b[27m.00\"\u001b[39m\nReceived: \u001b[31m\"$\u001b[7m64\u001b[27m.00\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByTestId('order-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('order-total')\u001b[22m\n\u001b[2m    13 × locator resolved to <dd data-testid=\"order-total\">$64.00</dd>\u001b[22m\n\u001b[2m       - unexpected value \"$64.00\"\u001b[22m\n\n\n  13 |     await page.getByTestId('coupon-input').fill('SAVE10');\n  14 |     await page.getByTestId('coupon-apply').click();\n> 15 |     await expect(page.getByTestId('order-total')).toHaveText('$72.00');\n     |                                                   ^\n  16 |   });\n  17 |\n  18 |   test('export CSV', { tag: '@regression' }, async ({ page }) => {\n    at C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts:15:51"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-26T09:30:58.113Z",
+                      "annotations": [
+                        {
+                          "type": "issue",
+                          "description": "SAVE10 gives 20% off",
+                          "location": {
+                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                            "line": 8,
+                            "column": 3
+                          }
+                        },
+                        {
+                          "type": "fail",
+                          "location": {
+                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                            "line": 12,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Testrig\\Desktop\\Lending wise\\test-results\\lab-annotations-lab-SAVE10-takes-10-off-webkit\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                        "column": 51,
+                        "line": 15
+                      }
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d60a0d352cedb73bd581-fdbab97c53d240408c16",
+              "file": "lab.spec.ts",
+              "line": 8,
+              "column": 3
+            },
+            {
+              "title": "export CSV",
+              "ok": true,
+              "tags": [
+                "lab",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                        "line": 19,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 41385,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-26T09:30:45.261Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                            "line": 19,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                        "line": 19,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 42844,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-26T09:31:06.761Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                            "line": 19,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d60a0d352cedb73bd581-e444c0b05ebf9a274d66",
+              "file": "lab.spec.ts",
+              "line": 18,
+              "column": 3
+            },
+            {
+              "title": "dark-mode export",
+              "ok": true,
+              "tags": [
+                "lab"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "location": {
+                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                        "line": 25,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-26T09:30:50.783Z",
+                      "annotations": [
+                        {
+                          "type": "fixme",
+                          "location": {
+                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                            "line": 25,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "location": {
+                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                        "line": 25,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-26T09:31:26.907Z",
+                      "annotations": [
+                        {
+                          "type": "fixme",
+                          "location": {
+                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                            "line": 25,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d60a0d352cedb73bd581-90e4848b559b884d41f8",
+              "file": "lab.spec.ts",
+              "line": 25,
+              "column": 8
+            },
+            {
+              "title": "copy link",
+              "ok": true,
+              "tags": [
+                "lab"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "browser",
+                      "description": "chromium"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3019,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-26T09:30:50.784Z",
+                      "annotations": [
+                        {
+                          "type": "browser",
+                          "description": "chromium"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Clipboard is not supported on WebKit",
+                      "location": {
+                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                        "line": 28,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 1524,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-26T09:31:28.059Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Clipboard is not supported on WebKit",
+                          "location": {
+                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
+                            "line": 28,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d60a0d352cedb73bd581-296e0e32030e948744ab",
+              "file": "lab.spec.ts",
+              "line": 27,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-26T09:30:41.495Z",
+    "duration": 68283.30099999999,
+    "expected": 5,
+    "skipped": 3,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
