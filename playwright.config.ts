@@ -45,7 +45,8 @@ testMatch: ['**/*.spec.ts'],
     use: { baseURL: process.env.BASE_URL },
     projects: [
       { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
-      { name: 'webkit',   use: { ...devices['Desktop Safari'] } },
+      { name: 'firefox',  use: { ...devices['Desktop Firefox'] } },
+      { name: 'mobile',   use: { ...devices['Pixel 7'] } },
     ],
   });
   /* Configure projects for major browsers */
