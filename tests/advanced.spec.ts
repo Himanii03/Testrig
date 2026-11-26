@@ -10,7 +10,7 @@ test.describe('charts', () => {
     await expect(page.getByTestId('chart-bar')).toHaveCount(6);
   });
 });
-
+     
 test.describe('settings', () => {
   test.beforeEach(async ({ page, isMobile }) => {
     test.fixme(isMobile, 'Settings are not on mobile yet');
