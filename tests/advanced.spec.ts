@@ -9,7 +9,7 @@ test.describe('charts', () => {
   test('revenue chart shows 6 months', async ({ page }) => {
     await expect(page.getByTestId('chart-bar')).toHaveCount(6);
   });
-});
+});     
      
 test.describe('settings', () => {
   test.beforeEach(async ({ page, isMobile }) => {
