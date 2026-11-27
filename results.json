@@ -53,22 +53,6 @@
           "**/*.spec.ts"
         ],
         "timeout": 30000
-      },
-      {
-        "outputDir": "C:/Users/Testrig/Desktop/Lending wise/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 2
-        },
-        "id": "mobile",
-        "name": "mobile",
-        "testDir": "C:/Users/Testrig/Desktop/Lending wise/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.spec.ts"
-        ],
-        "timeout": 30000
       }
     ],
     "filteredProjects": [
@@ -91,6 +75,7 @@
         "timeout": 30000,
         "use": {
           "baseURL": "https://thedappled.com",
+          "trace": "on-first-retry",
           "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
           "viewport": {
             "width": 1280,
@@ -103,7 +88,8 @@
           "deviceScaleFactor": 1,
           "isMobile": false,
           "hasTouch": false,
-          "defaultBrowserType": "chromium"
+          "defaultBrowserType": "chromium",
+          "currency": "USD"
         },
         "dependencies": [],
         "ignoreSnapshots": false,
@@ -128,6 +114,7 @@
         "timeout": 30000,
         "use": {
           "baseURL": "https://thedappled.com",
+          "trace": "on-first-retry",
           "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:159.0) Gecko/20100101 Firefox/159.0",
           "viewport": {
             "width": 1280,
@@ -140,48 +127,12 @@
           "deviceScaleFactor": 1,
           "isMobile": false,
           "hasTouch": false,
-          "defaultBrowserType": "firefox"
+          "defaultBrowserType": "firefox",
+          "currency": "EUR"
         },
         "dependencies": [],
         "ignoreSnapshots": false,
         "__projectId": "firefox"
-      },
-      {
-        "grep": {},
-        "grepInvert": null,
-        "outputDir": "C:\\Users\\Testrig\\Desktop\\Lending wise\\test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {
-          "actualWorkers": 2
-        },
-        "name": "mobile",
-        "testDir": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests",
-        "snapshotDir": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.spec.ts"
-        ],
-        "timeout": 30000,
-        "use": {
-          "baseURL": "https://thedappled.com",
-          "userAgent": "Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Mobile Safari/537.36",
-          "viewport": {
-            "width": 412,
-            "height": 839
-          },
-          "screen": {
-            "width": 412,
-            "height": 915
-          },
-          "deviceScaleFactor": 2.625,
-          "isMobile": true,
-          "hasTouch": true,
-          "defaultBrowserType": "chromium"
-        },
-        "dependencies": [],
-        "ignoreSnapshots": false,
-        "__projectId": "mobile"
       }
     ],
     "quiet": false,
@@ -204,1532 +155,214 @@
   },
   "suites": [
     {
-      "title": "advanced.spec.ts",
-      "file": "advanced.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "charts",
-          "file": "advanced.spec.ts",
-          "line": 5,
-          "column": 6,
-          "specs": [
-            {
-              "title": "revenue chart shows 6 months",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 5044,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:03:59.060Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "description": "Charts need Chromium",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 6,
-                        "column": 8
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:16.433Z",
-                      "annotations": [
-                        {
-                          "type": "skip",
-                          "description": "Charts need Chromium",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 6,
-                            "column": 8
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                },
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "mobile",
-                  "projectName": "mobile",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1613,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:57.829Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1e27b6f2dd5d928d283d-d603f39b75b334747b3b",
-              "file": "advanced.spec.ts",
-              "line": 9,
-              "column": 3
-            }
-          ]
-        },
-        {
-          "title": "settings",
-          "file": "advanced.spec.ts",
-          "line": 14,
-          "column": 6,
-          "specs": [
-            {
-              "title": "turn on email alerts",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 5262,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:03:59.082Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4023,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:16.482Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "fixme",
-                      "description": "Settings are not on mobile yet",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 16,
-                        "column": 10
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "mobile",
-                  "projectName": "mobile",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 1,
-                      "status": "skipped",
-                      "duration": 124,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:59.668Z",
-                      "annotations": [
-                        {
-                          "type": "fixme",
-                          "description": "Settings are not on mobile yet",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 16,
-                            "column": 10
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "1e27b6f2dd5d928d283d-e1d8dcf60c7d56584dcc",
-              "file": "advanced.spec.ts",
-              "line": 20,
-              "column": 3
-            }
-          ]
-        },
-        {
-          "title": "reports",
-          "file": "advanced.spec.ts",
-          "line": 26,
-          "column": 6,
-          "specs": [
-            {
-              "title": "daily summary @fast",
-              "ok": true,
-              "tags": [
-                "fast"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "category",
-                      "description": "report",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 26,
-                        "column": 6
-                      }
-                    },
-                    {
-                      "type": "issue",
-                      "description": "https://github.com/you/app/issues/58",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 31,
-                        "column": 3
-                      }
-                    },
-                    {
-                      "type": "owner",
-                      "description": "reports team",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 31,
-                        "column": 3
-                      }
-                    },
-                    {
-                      "type": "_runId",
-                      "description": "1795694647557"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2927,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:04.671Z",
-                      "annotations": [
-                        {
-                          "type": "category",
-                          "description": "report",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 26,
-                            "column": 6
-                          }
-                        },
-                        {
-                          "type": "issue",
-                          "description": "https://github.com/you/app/issues/58",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 31,
-                            "column": 3
-                          }
-                        },
-                        {
-                          "type": "owner",
-                          "description": "reports team",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 31,
-                            "column": 3
-                          }
-                        },
-                        {
-                          "type": "_runId",
-                          "description": "1795694647557"
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "category",
-                      "description": "report",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 26,
-                        "column": 6
-                      }
-                    },
-                    {
-                      "type": "issue",
-                      "description": "https://github.com/you/app/issues/58",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 31,
-                        "column": 3
-                      }
-                    },
-                    {
-                      "type": "owner",
-                      "description": "reports team",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 31,
-                        "column": 3
-                      }
-                    },
-                    {
-                      "type": "_runId",
-                      "description": "1795694663418"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1757,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:21.753Z",
-                      "annotations": [
-                        {
-                          "type": "category",
-                          "description": "report",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 26,
-                            "column": 6
-                          }
-                        },
-                        {
-                          "type": "issue",
-                          "description": "https://github.com/you/app/issues/58",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 31,
-                            "column": 3
-                          }
-                        },
-                        {
-                          "type": "owner",
-                          "description": "reports team",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 31,
-                            "column": 3
-                          }
-                        },
-                        {
-                          "type": "_runId",
-                          "description": "1795694663418"
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "category",
-                      "description": "report",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 26,
-                        "column": 6
-                      }
-                    },
-                    {
-                      "type": "issue",
-                      "description": "https://github.com/you/app/issues/58",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 31,
-                        "column": 3
-                      }
-                    },
-                    {
-                      "type": "owner",
-                      "description": "reports team",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 31,
-                        "column": 3
-                      }
-                    },
-                    {
-                      "type": "_runId",
-                      "description": "1795694700803"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "mobile",
-                  "projectName": "mobile",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1053,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:59.812Z",
-                      "annotations": [
-                        {
-                          "type": "category",
-                          "description": "report",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 26,
-                            "column": 6
-                          }
-                        },
-                        {
-                          "type": "issue",
-                          "description": "https://github.com/you/app/issues/58",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 31,
-                            "column": 3
-                          }
-                        },
-                        {
-                          "type": "owner",
-                          "description": "reports team",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 31,
-                            "column": 3
-                          }
-                        },
-                        {
-                          "type": "_runId",
-                          "description": "1795694700803"
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1e27b6f2dd5d928d283d-dbb763e9f199ab6a84ad",
-              "file": "advanced.spec.ts",
-              "line": 31,
-              "column": 3
-            },
-            {
-              "title": "full year report @slow",
-              "ok": true,
-              "tags": [
-                "slow"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "category",
-                      "description": "report",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 26,
-                        "column": 6
-                      }
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2689,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:04.914Z",
-                      "annotations": [
-                        {
-                          "type": "category",
-                          "description": "report",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 26,
-                            "column": 6
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "category",
-                      "description": "report",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 26,
-                        "column": 6
-                      }
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1553,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:23.535Z",
-                      "annotations": [
-                        {
-                          "type": "category",
-                          "description": "report",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 26,
-                            "column": 6
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "category",
-                      "description": "report",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 26,
-                        "column": 6
-                      }
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "mobile",
-                  "projectName": "mobile",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1106,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:05:00.886Z",
-                      "annotations": [
-                        {
-                          "type": "category",
-                          "description": "report",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 26,
-                            "column": 6
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1e27b6f2dd5d928d283d-84bf7856160cd2fc0aa7",
-              "file": "advanced.spec.ts",
-              "line": 41,
-              "column": 3
-            },
-            {
-              "title": "export to PDF",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "category",
-                      "description": "report",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 26,
-                        "column": 6
-                      }
-                    },
-                    {
-                      "type": "skip",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 45,
-                        "column": 8
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:07.626Z",
-                      "annotations": [
-                        {
-                          "type": "category",
-                          "description": "report",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 26,
-                            "column": 6
-                          }
-                        },
-                        {
-                          "type": "skip",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 45,
-                            "column": 8
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                },
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "category",
-                      "description": "report",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 26,
-                        "column": 6
-                      }
-                    },
-                    {
-                      "type": "skip",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 45,
-                        "column": 8
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:25.113Z",
-                      "annotations": [
-                        {
-                          "type": "category",
-                          "description": "report",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 26,
-                            "column": 6
-                          }
-                        },
-                        {
-                          "type": "skip",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 45,
-                            "column": 8
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                },
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "category",
-                      "description": "report",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 26,
-                        "column": 6
-                      }
-                    },
-                    {
-                      "type": "skip",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                        "line": 45,
-                        "column": 8
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "mobile",
-                  "projectName": "mobile",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:05:02.018Z",
-                      "annotations": [
-                        {
-                          "type": "category",
-                          "description": "report",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 26,
-                            "column": 6
-                          }
-                        },
-                        {
-                          "type": "skip",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\advanced.spec.ts",
-                            "line": 45,
-                            "column": 8
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "1e27b6f2dd5d928d283d-ada1fc617101a6a92875",
-              "file": "advanced.spec.ts",
-              "line": 45,
-              "column": 8
-            }
-          ]
-        }
-      ]
-    },
-    {
       "title": "lab.spec.ts",
       "file": "lab.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "annotations lab",
+          "title": "sign up with the worker account",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "currency",
+                  "description": "USD"
+                },
+                {
+                  "type": "account",
+                  "description": "worker-0@lab.test"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5948,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-27T09:17:31.419Z",
+                  "annotations": [
+                    {
+                      "type": "currency",
+                      "description": "USD"
+                    },
+                    {
+                      "type": "account",
+                      "description": "worker-0@lab.test"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "console",
+                      "contentType": "text/plain",
+                      "body": ""
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "currency",
+                  "description": "EUR"
+                },
+                {
+                  "type": "account",
+                  "description": "worker-2@lab.test"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10631,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-27T09:17:38.679Z",
+                  "annotations": [
+                    {
+                      "type": "currency",
+                      "description": "EUR"
+                    },
+                    {
+                      "type": "account",
+                      "description": "worker-2@lab.test"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "console",
+                      "contentType": "text/plain",
+                      "body": "W2Vycm9yXSBbSmF2YVNjcmlwdCBFcnJvcjogIkNvb2tpZSDigJxfY2Z1dmlk4oCdIGhhcyBiZWVuIHJlamVjdGVkIGZvciBpbnZhbGlkIGRvbWFpbi4iIHtmaWxlOiAiaHR0cHM6Ly9jbGVyay50aGVkYXBwbGVkLmNvbS92MS9lbnZpcm9ubWVudD9fX2NsZXJrX2FwaV92ZXJzaW9uPTIwMjUtMTEtMTAmX2NsZXJrX2pzX3ZlcnNpb249NS4xMjguMyIgbGluZTogMH1dCltpbmZvXSBbaW5mb10gc3RvcmUgbG9hZGVkOiAzIGJvb2tzCltlcnJvcl0gW2Vycm9yXSByZWNvbW1lbmRhdGlvbnMgc2VydmljZSB0aW1lZCBvdXQ="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d60a0d352cedb73bd581-af362e647e2545962b61",
           "file": "lab.spec.ts",
           "line": 3,
-          "column": 6,
-          "specs": [
+          "column": 1
+        },
+        {
+          "title": "prices use the project currency",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "SAVE10 takes 10% off",
-              "ok": true,
-              "tags": [
-                "lab",
-                "smoke"
-              ],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [
                 {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "issue",
-                      "description": "SAVE10 gives 20% off",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                        "line": 8,
-                        "column": 3
-                      }
-                    },
-                    {
-                      "type": "fail",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                        "line": 12,
-                        "column": 10
-                      }
-                    }
-                  ],
-                  "expectedStatus": "failed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 6894,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('order-total')\nExpected: \u001b[32m\"$\u001b[7m72\u001b[27m.00\"\u001b[39m\nReceived: \u001b[31m\"$\u001b[7m64\u001b[27m.00\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByTestId('order-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('order-total')\u001b[22m\n\u001b[2m    14 × locator resolved to <dd data-testid=\"order-total\">$64.00</dd>\u001b[22m\n\u001b[2m       - unexpected value \"$64.00\"\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('order-total')\nExpected: \u001b[32m\"$\u001b[7m72\u001b[27m.00\"\u001b[39m\nReceived: \u001b[31m\"$\u001b[7m64\u001b[27m.00\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByTestId('order-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('order-total')\u001b[22m\n\u001b[2m    14 × locator resolved to <dd data-testid=\"order-total\">$64.00</dd>\u001b[22m\n\u001b[2m       - unexpected value \"$64.00\"\u001b[22m\n\n    at C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts:15:51",
-                        "location": {
-                          "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                          "column": 51,
-                          "line": 15
-                        },
-                        "snippet": " \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'coupon-input'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'SAVE10'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'coupon-apply'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'order-total'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'$72.00'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m\n \u001b[90m 18 |\u001b[39m   test(\u001b[32m'export CSV'\u001b[39m\u001b[33m,\u001b[39m { tag\u001b[33m:\u001b[39m \u001b[32m'@regression'\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                            "column": 51,
-                            "line": 15
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('order-total')\nExpected: \u001b[32m\"$\u001b[7m72\u001b[27m.00\"\u001b[39m\nReceived: \u001b[31m\"$\u001b[7m64\u001b[27m.00\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByTestId('order-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('order-total')\u001b[22m\n\u001b[2m    14 × locator resolved to <dd data-testid=\"order-total\">$64.00</dd>\u001b[22m\n\u001b[2m       - unexpected value \"$64.00\"\u001b[22m\n\n\n  13 |     await page.getByTestId('coupon-input').fill('SAVE10');\n  14 |     await page.getByTestId('coupon-apply').click();\n> 15 |     await expect(page.getByTestId('order-total')).toHaveText('$72.00');\n     |                                                   ^\n  16 |   });\n  17 |\n  18 |   test('export CSV', { tag: '@regression' }, async ({ page }) => {\n    at C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts:15:51"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:07.636Z",
-                      "annotations": [
-                        {
-                          "type": "issue",
-                          "description": "SAVE10 gives 20% off",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                            "line": 8,
-                            "column": 3
-                          }
-                        },
-                        {
-                          "type": "fail",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                            "line": 12,
-                            "column": 10
-                          }
-                        }
-                      ],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\Testrig\\Desktop\\Lending wise\\test-results\\lab-annotations-lab-SAVE10-takes-10-off-chromium\\error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                        "column": 51,
-                        "line": 15
-                      }
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "issue",
-                      "description": "SAVE10 gives 20% off",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                        "line": 8,
-                        "column": 3
-                      }
-                    },
-                    {
-                      "type": "fail",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                        "line": 12,
-                        "column": 10
-                      }
-                    }
-                  ],
-                  "expectedStatus": "failed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 6907,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('order-total')\nExpected: \u001b[32m\"$\u001b[7m72\u001b[27m.00\"\u001b[39m\nReceived: \u001b[31m\"$\u001b[7m64\u001b[27m.00\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByTestId('order-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('order-total')\u001b[22m\n\u001b[2m    13 × locator resolved to <dd data-testid=\"order-total\">$64.00</dd>\u001b[22m\n\u001b[2m       - unexpected value \"$64.00\"\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('order-total')\nExpected: \u001b[32m\"$\u001b[7m72\u001b[27m.00\"\u001b[39m\nReceived: \u001b[31m\"$\u001b[7m64\u001b[27m.00\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByTestId('order-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('order-total')\u001b[22m\n\u001b[2m    13 × locator resolved to <dd data-testid=\"order-total\">$64.00</dd>\u001b[22m\n\u001b[2m       - unexpected value \"$64.00\"\u001b[22m\n\n    at C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts:15:51",
-                        "location": {
-                          "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                          "column": 51,
-                          "line": 15
-                        },
-                        "snippet": " \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'coupon-input'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'SAVE10'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'coupon-apply'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'order-total'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'$72.00'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m\n \u001b[90m 18 |\u001b[39m   test(\u001b[32m'export CSV'\u001b[39m\u001b[33m,\u001b[39m { tag\u001b[33m:\u001b[39m \u001b[32m'@regression'\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                            "column": 51,
-                            "line": 15
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('order-total')\nExpected: \u001b[32m\"$\u001b[7m72\u001b[27m.00\"\u001b[39m\nReceived: \u001b[31m\"$\u001b[7m64\u001b[27m.00\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByTestId('order-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('order-total')\u001b[22m\n\u001b[2m    13 × locator resolved to <dd data-testid=\"order-total\">$64.00</dd>\u001b[22m\n\u001b[2m       - unexpected value \"$64.00\"\u001b[22m\n\n\n  13 |     await page.getByTestId('coupon-input').fill('SAVE10');\n  14 |     await page.getByTestId('coupon-apply').click();\n> 15 |     await expect(page.getByTestId('order-total')).toHaveText('$72.00');\n     |                                                   ^\n  16 |   });\n  17 |\n  18 |   test('export CSV', { tag: '@regression' }, async ({ page }) => {\n    at C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts:15:51"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:25.122Z",
-                      "annotations": [
-                        {
-                          "type": "issue",
-                          "description": "SAVE10 gives 20% off",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                            "line": 8,
-                            "column": 3
-                          }
-                        },
-                        {
-                          "type": "fail",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                            "line": 12,
-                            "column": 10
-                          }
-                        }
-                      ],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\Testrig\\Desktop\\Lending wise\\test-results\\lab-annotations-lab-SAVE10-takes-10-off-firefox\\error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                        "column": 51,
-                        "line": 15
-                      }
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "issue",
-                      "description": "SAVE10 gives 20% off",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                        "line": 8,
-                        "column": 3
-                      }
-                    },
-                    {
-                      "type": "fail",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                        "line": 12,
-                        "column": 10
-                      }
-                    }
-                  ],
-                  "expectedStatus": "failed",
-                  "projectId": "mobile",
-                  "projectName": "mobile",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 6311,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('order-total')\nExpected: \u001b[32m\"$\u001b[7m72\u001b[27m.00\"\u001b[39m\nReceived: \u001b[31m\"$\u001b[7m64\u001b[27m.00\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByTestId('order-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('order-total')\u001b[22m\n\u001b[2m    14 × locator resolved to <dd data-testid=\"order-total\">$64.00</dd>\u001b[22m\n\u001b[2m       - unexpected value \"$64.00\"\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('order-total')\nExpected: \u001b[32m\"$\u001b[7m72\u001b[27m.00\"\u001b[39m\nReceived: \u001b[31m\"$\u001b[7m64\u001b[27m.00\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByTestId('order-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('order-total')\u001b[22m\n\u001b[2m    14 × locator resolved to <dd data-testid=\"order-total\">$64.00</dd>\u001b[22m\n\u001b[2m       - unexpected value \"$64.00\"\u001b[22m\n\n    at C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts:15:51",
-                        "location": {
-                          "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                          "column": 51,
-                          "line": 15
-                        },
-                        "snippet": " \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'coupon-input'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'SAVE10'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'coupon-apply'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'order-total'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'$72.00'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m\n \u001b[90m 18 |\u001b[39m   test(\u001b[32m'export CSV'\u001b[39m\u001b[33m,\u001b[39m { tag\u001b[33m:\u001b[39m \u001b[32m'@regression'\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                            "column": 51,
-                            "line": 15
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('order-total')\nExpected: \u001b[32m\"$\u001b[7m72\u001b[27m.00\"\u001b[39m\nReceived: \u001b[31m\"$\u001b[7m64\u001b[27m.00\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByTestId('order-total') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('order-total')\u001b[22m\n\u001b[2m    14 × locator resolved to <dd data-testid=\"order-total\">$64.00</dd>\u001b[22m\n\u001b[2m       - unexpected value \"$64.00\"\u001b[22m\n\n\n  13 |     await page.getByTestId('coupon-input').fill('SAVE10');\n  14 |     await page.getByTestId('coupon-apply').click();\n> 15 |     await expect(page.getByTestId('order-total')).toHaveText('$72.00');\n     |                                                   ^\n  16 |   });\n  17 |\n  18 |   test('export CSV', { tag: '@regression' }, async ({ page }) => {\n    at C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts:15:51"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:05:02.024Z",
-                      "annotations": [
-                        {
-                          "type": "issue",
-                          "description": "SAVE10 gives 20% off",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                            "line": 8,
-                            "column": 3
-                          }
-                        },
-                        {
-                          "type": "fail",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                            "line": 12,
-                            "column": 10
-                          }
-                        }
-                      ],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\Testrig\\Desktop\\Lending wise\\test-results\\lab-annotations-lab-SAVE10-takes-10-off-mobile\\error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                        "column": 51,
-                        "line": 15
-                      }
-                    }
-                  ],
-                  "status": "expected"
+                  "type": "currency",
+                  "description": "USD"
                 }
               ],
-              "id": "d60a0d352cedb73bd581-fdbab97c53d240408c16",
-              "file": "lab.spec.ts",
-              "line": 8,
-              "column": 3
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4739,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-27T09:17:31.331Z",
+                  "annotations": [
+                    {
+                      "type": "currency",
+                      "description": "USD"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "console",
+                      "contentType": "text/plain",
+                      "body": ""
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
             },
             {
-              "title": "export CSV",
-              "ok": true,
-              "tags": [
-                "lab",
-                "regression"
-              ],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [
                 {
-                  "timeout": 90000,
-                  "annotations": [
-                    {
-                      "type": "slow",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                        "line": 19,
-                        "column": 10
-                      }
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 41922,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:07.653Z",
-                      "annotations": [
-                        {
-                          "type": "slow",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                            "line": 19,
-                            "column": 10
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 90000,
-                  "annotations": [
-                    {
-                      "type": "slow",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                        "line": 19,
-                        "column": 10
-                      }
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 42331,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:32.073Z",
-                      "annotations": [
-                        {
-                          "type": "slow",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                            "line": 19,
-                            "column": 10
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 90000,
-                  "annotations": [
-                    {
-                      "type": "slow",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                        "line": 19,
-                        "column": 10
-                      }
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "mobile",
-                  "projectName": "mobile",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 41706,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:05:08.365Z",
-                      "annotations": [
-                        {
-                          "type": "slow",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                            "line": 19,
-                            "column": 10
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "type": "currency",
+                  "description": "EUR"
                 }
               ],
-              "id": "d60a0d352cedb73bd581-e444c0b05ebf9a274d66",
-              "file": "lab.spec.ts",
-              "line": 18,
-              "column": 3
-            },
-            {
-              "title": "dark-mode export",
-              "ok": true,
-              "tags": [
-                "lab"
-              ],
-              "tests": [
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
                 {
-                  "timeout": 30000,
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13068,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-27T09:17:39.267Z",
                   "annotations": [
                     {
-                      "type": "fixme",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                        "line": 25,
-                        "column": 8
-                      }
+                      "type": "currency",
+                      "description": "EUR"
                     }
                   ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "attachments": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:14.560Z",
-                      "annotations": [
-                        {
-                          "type": "fixme",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                            "line": 25,
-                            "column": 8
-                          }
-                        }
-                      ],
-                      "attachments": []
+                      "name": "console",
+                      "contentType": "text/plain",
+                      "body": ""
                     }
-                  ],
-                  "status": "skipped"
-                },
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "fixme",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                        "line": 25,
-                        "column": 8
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:49.600Z",
-                      "annotations": [
-                        {
-                          "type": "fixme",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                            "line": 25,
-                            "column": 8
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                },
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "fixme",
-                      "location": {
-                        "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                        "line": 25,
-                        "column": 8
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "mobile",
-                  "projectName": "mobile",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:05:14.436Z",
-                      "annotations": [
-                        {
-                          "type": "fixme",
-                          "location": {
-                            "file": "C:\\Users\\Testrig\\Desktop\\Lending wise\\tests\\lab.spec.ts",
-                            "line": 25,
-                            "column": 8
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
+                  ]
                 }
               ],
-              "id": "d60a0d352cedb73bd581-90e4848b559b884d41f8",
-              "file": "lab.spec.ts",
-              "line": 25,
-              "column": 8
-            },
-            {
-              "title": "copy link",
-              "ok": true,
-              "tags": [
-                "lab"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "browser",
-                      "description": "chromium"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1076,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:14.561Z",
-                      "annotations": [
-                        {
-                          "type": "browser",
-                          "description": "chromium"
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "browser",
-                      "description": "firefox"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 4124,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:04:50.438Z",
-                      "annotations": [
-                        {
-                          "type": "browser",
-                          "description": "firefox"
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                },
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "browser",
-                      "description": "chromium"
-                    }
-                  ],
-                  "expectedStatus": "passed",
-                  "projectId": "mobile",
-                  "projectName": "mobile",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1876,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-11-26T12:05:18.218Z",
-                      "annotations": [
-                        {
-                          "type": "browser",
-                          "description": "chromium"
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "d60a0d352cedb73bd581-296e0e32030e948744ab",
-              "file": "lab.spec.ts",
-              "line": 27,
-              "column": 3
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "d60a0d352cedb73bd581-8bf07dab65b655ad8bf1",
+          "file": "lab.spec.ts",
+          "line": 9,
+          "column": 1
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-26T12:03:58.125Z",
-    "duration": 112131.909,
-    "expected": 19,
-    "skipped": 8,
+    "startTime": "2026-11-27T09:17:29.989Z",
+    "duration": 27154.409,
+    "expected": 4,
+    "skipped": 0,
     "unexpected": 0,
     "flaky": 0
   }
