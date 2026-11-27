@@ -23,7 +23,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '24'
-
+   
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2]
+    steps:
+      - run: npx playwright test --shard=${{ matrix.shard }}/2
+      
       - name: Install dependencies
         run: npm ci
 
@@ -35,8 +42,8 @@ jobs:
         env:
           BASE_URL: ${{ secrets.BASE_URL }}
           ASSIGNMENT_TOKEN: ${{ secrets.ASSIGNMENT_TOKEN }}
-          SHOP_EMAIL: ${{ secrets.SHOP_EMAIL }}
-          SHOP_PASSWORD: ${{ secrets.SHOP_PASSWORD }}
+          # SHOP_EMAIL: ${{ secrets.SHOP_EMAIL }}
+          # SHOP_PASSWORD: ${{ secrets.SHOP_PASSWORD }}
 
       - name: Upload Playwright report
         if: always()
